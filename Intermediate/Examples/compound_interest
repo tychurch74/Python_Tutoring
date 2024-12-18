@@ -1,0 +1,17 @@
+
+#Compound interest function
+def compound_interest(principal, rate, time):
+    Amount = principal * (pow((1 + rate / 100), time))
+    ci = Amount - principal
+    total = ci + principal
+    print("Compound interest is", ci)
+    print(f"Total after set time: ${total}")
+ 
+ 
+#Get input from user.
+principal = int(input("Enter the principal amount: "))
+rate = int(input("Enter rate of interest: "))
+time = int(input("Enter time in years: " ))
+
+#Run the function
+compound_interest(principal,rate,time)
